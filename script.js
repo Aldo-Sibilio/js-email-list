@@ -12,7 +12,10 @@ for (let i = 0; i < 10; i++) {
         })
 
         .then(function (data) {
+            
+            const email = data.response;
 
+            emailList.innerHTML += `<li>${email}</li>`;
         });
 
 }
